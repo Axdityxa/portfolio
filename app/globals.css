@@ -45,3 +45,32 @@ body {
   min-height: 100vh;
   width: 100%;
 }
+
+/* Animation delay utilities */
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Typed text animation */
+.typed-text {
+  border-right: 3px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite alternate;
+  display: inline-block;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgba(96, 165, 250, 0.7) }
+}
