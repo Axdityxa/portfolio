@@ -106,6 +106,23 @@ body {
   50% { border-color: rgba(96, 165, 250, 0.7) }
 }
 
+/* Floating animation for contact heading */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.floating-text {
+  animation: float 4s ease-in-out infinite;
+}
+
 :root {
   --radius: 0.625rem;
   --foreground: #171717;
