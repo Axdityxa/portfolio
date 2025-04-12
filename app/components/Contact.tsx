@@ -27,7 +27,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative min-h-screen flex flex-col items-center justify-center py-20">
-      <h2 className="text-5xl md:text-6xl font-bold mb-10 text-white floating-text drop-shadow-lg">
+      <h2 className="text-5xl md:text-6xl font-bold mb-10 text-white floating-text drop-shadow-xl">
         Get in Touch
       </h2>
       
@@ -43,7 +43,7 @@ export default function Contact() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full py-2 px-4 bg-gray-900/95 text-white rounded-xl focus:outline-none"
+              className="w-full py-2 px-4 bg-gray-900/95 text-white rounded-xl focus:outline-none border-1 border-gray-700"
               placeholder="Your name"
               required
             />
@@ -59,7 +59,7 @@ export default function Contact() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full py-2 px-4 bg-gray-900/95 text-white rounded-xl focus:outline-none"
+              className="w-full py-2 px-4 bg-gray-900/95 text-white rounded-xl focus:outline-none border-1 border-gray-700"
               placeholder="your@email.com"
               required
             />
@@ -75,7 +75,7 @@ export default function Contact() {
               value={formData.message}
               onChange={handleChange}
               rows={4}
-              className="w-full py-2 px-4 bg-gray-900/95 text-white rounded-xl focus:outline-none resize-none"
+              className="w-full py-2 px-4 bg-gray-900/95 text-white rounded-xl focus:outline-none resize-none border-1 border-gray-700"
               placeholder="Your message..."
               required
             />
