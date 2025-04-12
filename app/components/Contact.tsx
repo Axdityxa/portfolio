@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <section id="contact" className="mb-20 backdrop-blur-sm bg-white/80 dark:bg-black/50 p-6 rounded-lg shadow-lg">
       <h2 className="text-3xl font-bold mb-6 text-gray-800 dark:text-white">Get In Touch</h2>
-      <p className="mb-6 text-gray-700 dark:text-gray-300">Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+      <p className="mb-6 text-gray-700 dark:text-gray-300">Feel free to reach out if you&apos;re looking for a developer, have a question, or just want to connect.</p>
       
       <div className="flex flex-col space-y-4">
         <a href="mailto:youremail@example.com" className="flex items-center space-x-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
