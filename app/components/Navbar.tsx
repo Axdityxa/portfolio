@@ -27,17 +27,14 @@ export default function Navbar() {
     <header className={`w-full fixed top-0 left-0 right-0 z-10 transition-all duration-300 ${scrolled ? 'bg-white dark:bg-gray-900 shadow-md py-2' : 'bg-white dark:bg-gray-900/70 py-4'}`}>
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-gray-800 dark:text-white">
+          <div className="text-2xl font-medium text-gray-800 dark:text-white">
             <a href="#" className="flex items-center group">
-              <div className="w-8 h-8 mr-3 rounded-full bg-blue-500 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white font-bold">P</span>
-              </div>
-              <span className="group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors duration-300">My Portfolio</span>
+              <span className="font-poppins group-hover:text-blue-500 dark:group-hover:text-blue-400 transition-colors duration-300">Aditya Sharma</span>
             </a>
           </div>
           
           {/* Desktop menu */}
-          <nav className="hidden md:flex space-x-10">
+          <nav className="hidden md:flex space-x-10 font-poppins">
             <a href="#about" className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors duration-300 font-medium relative group">
               About
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 dark:bg-blue-400 group-hover:w-full transition-all duration-300"></span>
@@ -77,7 +74,7 @@ export default function Navbar() {
         {/* Mobile menu */}
         {isMenuOpen && (
           <div className="md:hidden mt-4 pb-2 bg-gray-50 dark:bg-gray-800 rounded-lg p-2">
-            <nav className="flex flex-col space-y-3">
+            <nav className="flex flex-col space-y-3 font-poppins">
               <a 
                 href="#about" 
                 className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-300 font-medium py-2 px-3 rounded"
