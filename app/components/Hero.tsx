@@ -1,11 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Hero() {
   // Use a state to track if we're on the client-side
   const [isMounted, setIsMounted] = useState(false);
-  
+
   useEffect(() => {
     // This will only run on the client after hydration
     setIsMounted(true);
@@ -13,7 +14,7 @@ export default function Hero() {
 
   return (
     <section id="hero" className="relative flex flex-col items-center justify-center min-h-[80vh] mb-20 overflow-hidden">
-      
+
       {/* Animated circles - only show when mounted to prevent hydration mismatch */}
       {isMounted && (
         <>
@@ -22,7 +23,7 @@ export default function Hero() {
           <div className="absolute top-1/2 left-1/3 w-24 h-24 bg-cyan-300/10 dark:bg-cyan-500/10 rounded-full filter blur-xl animate-pulse animation-delay-4000"></div>
         </>
       )}
-      
+
       {/* Content with animations */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className={`transition-all duration-1000 transform ${isMounted ? 'translate-y-0 opacity-100' : 'translate-y-0 opacity-100'}`}>
@@ -30,28 +31,43 @@ export default function Hero() {
             Hello, I&apos;m <span className="text-blue-600 dark:text-blue-500 font-extrabold">Aditya Sharma</span>
           </h1>
         </div>
-        
+
         <div className={`transition-all duration-1000 transform ${isMounted ? 'delay-300' : ''}`}>
           <h2 className="text-2xl md:text-3xl font-light mb-8 text-white dark:text-gray-200">
-            <span className={isMounted ? "typed-text" : ""}>Web Developer & Designer</span>
+            {isMounted && (
+              <TypeAnimation
+                sequence={[
+                  "Full Stack Web Developer",
+                  2000,
+                  "Front-End Dev",
+                  2000,
+                  "Back-End Dev",
+                  2000,
+                  "Linux System Admin",
+                  2000,
+                ]}
+                speed={50}
+                repeat={Infinity}
+              />
+            )}
           </h2>
         </div>
-        
+
         <div className={`flex flex-col md:flex-row gap-4 justify-center transition-all duration-1000 transform ${isMounted ? 'delay-600' : ''}`}>
-          <a 
-            href="#projects" 
+          <a
+            href="#projects"
             className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-medium transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
           >
             View My Work
           </a>
-          <a 
-            href="#contact" 
+          <a
+            href="#contact"
             className="px-8 py-4 bg-transparent hover:bg-blue-100/20 dark:hover:bg-white/10 border-2 border-gray-400 dark:border-white text-gray-300 dark:text-white rounded-full font-medium transition-all duration-300 backdrop-blur-sm hover:shadow-lg"
           >
             Contact Me
           </a>
         </div>
-        
+
         <div className={`mt-16 transition-all duration-1000 transform ${isMounted ? 'delay-900' : ''}`}>
           <div className="flex justify-center space-x-6">
             <a href="#" className="text-white dark:text-gray-400 hover:text-blue-600 dark:hover:text-white transition-colors duration-300">
@@ -77,7 +93,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      
+
       {/* Scroll indicator - only show when mounted */}
       {isMounted && (
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 transition-opacity duration-1000 opacity-100">
