@@ -32,7 +32,7 @@ export default function Hero() {
         </div>
         
         <div className={`transition-all duration-1000 transform ${isMounted ? 'delay-300' : ''}`}>
-          <h2 className="text-2xl md:text-3xl font-light mb-8 text-gray-700 dark:text-gray-200">
+          <h2 className="text-2xl md:text-3xl font-light mb-8 text-white dark:text-gray-200">
             <span className={isMounted ? "typed-text" : ""}>Web Developer & Designer</span>
           </h2>
         </div>
@@ -46,7 +46,7 @@ export default function Hero() {
           </a>
           <a 
             href="#contact" 
-            className="px-8 py-4 bg-transparent hover:bg-blue-100/20 dark:hover:bg-white/10 border-2 border-blue-600 dark:border-white text-blue-600 dark:text-white rounded-full font-medium transition-all duration-300 backdrop-blur-sm hover:shadow-lg"
+            className="px-8 py-4 bg-transparent hover:bg-blue-100/20 dark:hover:bg-white/10 border-2 border-gray-400 dark:border-white text-gray-300 dark:text-white rounded-full font-medium transition-all duration-300 backdrop-blur-sm hover:shadow-lg"
           >
             Contact Me
           </a>
