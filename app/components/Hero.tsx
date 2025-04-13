@@ -39,9 +39,9 @@ export default function Hero() {
                 sequence={[
                   "Full Stack Web Developer",
                   2000,
-                  "Front-End Dev",
+                  "Front-End Developer",
                   2000,
-                  "Back-End Dev",
+                  "Back-End Developer",
                   2000,
                   "Linux System Admin",
                   2000,
