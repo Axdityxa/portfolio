@@ -8,6 +8,11 @@ export default function Contact() {
     email: "",
     message: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: '' });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -17,12 +22,41 @@ export default function Contact() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Form submission logic would go here
-    console.log("Form submitted:", formData);
-    alert("Message sent! (Demo only)");
-    setFormData({ name: "", email: "", message: "" });
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
+    
+    try {
+      const response = await fetch('/api/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      const data = await response.json();
+      
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message');
+      }
+      
+      // Success
+      setSubmitStatus({
+        type: 'success',
+        message: 'Your message has been sent! I will get back to you soon.'
+      });
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error('Error sending message:', error);
+      setSubmitStatus({
+        type: 'error',
+        message: error instanceof Error ? error.message : 'Failed to send message. Please try again.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -32,6 +66,14 @@ export default function Contact() {
       </h2>
       
       <div className="w-full max-w-xl mx-auto px-8 py-8 h-110 bg-gray-800/90 rounded-2xl shadow-lg">
+        {submitStatus.type && (
+          <div className={`p-4 mb-4 rounded-xl ${
+            submitStatus.type === 'success' ? 'bg-green-900/70 text-green-100' : 'bg-red-900/70 text-red-100'
+          }`}>
+            {submitStatus.message}
+          </div>
+        )}
+        
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
             <label htmlFor="name" className="block text-white text-lg font-medium mb-1">
@@ -46,6 +88,7 @@ export default function Contact() {
               className="w-full py-2 px-4 bg-gray-900/95 text-white rounded-xl focus:outline-none border-1 border-gray-700"
               placeholder="Your name"
               required
+              disabled={isSubmitting}
             />
           </div>
           
@@ -62,6 +105,7 @@ export default function Contact() {
               className="w-full py-2 px-4 bg-gray-900/95 text-white rounded-xl focus:outline-none border-1 border-gray-700"
               placeholder="your@email.com"
               required
+              disabled={isSubmitting}
             />
           </div>
           
@@ -78,14 +122,18 @@ export default function Contact() {
               className="w-full py-2 px-4 bg-gray-900/95 text-white rounded-xl focus:outline-none resize-none border-1 border-gray-700"
               placeholder="Your message..."
               required
+              disabled={isSubmitting}
             />
           </div>
           
           <button
             type="submit"
-            className="w-full py-2 bg-[#38b2ed] hover:bg-[#2ca8e5] text-white font-medium rounded-xl transition-colors duration-300 mt-2"
+            disabled={isSubmitting}
+            className={`w-full py-2 bg-[#38b2ed] hover:bg-[#2ca8e5] text-white font-medium rounded-xl transition-colors duration-300 mt-2 ${
+              isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
+            }`}
           >
-            Send Message
+            {isSubmitting ? 'Sending...' : 'Send Message'}
           </button>
         </form>
       </div>
