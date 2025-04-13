@@ -38,7 +38,12 @@ export function NavBar({ items, className }: NavBarProps) {
         className,
       )}
     >
-      <div className="flex items-center gap-2 bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-700 backdrop-blur-md py-2 px-3 rounded-full shadow-md">
+      <div className={cn(
+        "flex items-center gap-2 backdrop-blur-md py-2 px-3 rounded-full shadow-md",
+        isMobile 
+          ? "bg-white/90 dark:bg-gray-900/90 fixed bottom-6 left-1/2 -translate-x-1/2 border border-gray-200 dark:border-gray-700"
+          : "bg-white/80 dark:bg-gray-900/80 border border-gray-200 dark:border-gray-700"
+      )}>
         {items.map((item) => {
           const Icon = item.icon
           const isActive = activeTab === item.name
@@ -49,14 +54,15 @@ export function NavBar({ items, className }: NavBarProps) {
               href={item.url}
               onClick={() => setActiveTab(item.name)}
               className={cn(
-                "relative cursor-pointer text-sm font-poppins px-4 py-1.5 rounded-full transition-colors",
+                "relative cursor-pointer text-sm font-poppins rounded-full transition-colors",
+                isMobile ? "px-3 py-2" : "px-4 py-1.5",
                 "text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400",
                 isActive && "bg-blue-50 dark:bg-blue-900/20 text-blue-500 dark:text-blue-400",
               )}
             >
-              <span className="hidden md:inline">{item.name}</span>
-              <span className="md:hidden">
-                <Icon size={18} strokeWidth={2.5} />
+              <span className={isMobile ? "hidden" : "hidden md:inline"}>{item.name}</span>
+              <span className={isMobile ? "inline" : "md:hidden"}>
+                <Icon size={isMobile ? 20 : 18} strokeWidth={2.5} />
               </span>
               {isActive && (
                 <motion.div
