@@ -13,8 +13,6 @@ export default function Hero() {
 
   return (
     <section id="hero" className="relative flex flex-col items-center justify-center min-h-[80vh] mb-20 overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-100/20 to-purple-100/20 dark:from-blue-900/30 dark:to-purple-900/30 rounded-xl"></div>
       
       {/* Animated circles - only show when mounted to prevent hydration mismatch */}
       {isMounted && (
