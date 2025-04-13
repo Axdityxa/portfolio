@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { NavBar } from "./ui/tubelight-navbar";
-import { Home, User, Briefcase, Code, Mail } from "lucide-react";
+import { User, Briefcase, Code, Mail } from "lucide-react";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
