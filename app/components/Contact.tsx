@@ -65,7 +65,7 @@ export default function Contact() {
         Get in Touch
       </h2>
       
-      <div className="w-full max-w-xl mx-auto px-8 py-8 h-110 bg-gray-800/90 rounded-2xl shadow-lg">
+      <div className="w-full max-w-xl mx-auto px-8 py-8 bg-gray-800/90 rounded-2xl shadow-lg">
         {submitStatus.type && (
           <div className={`p-4 mb-4 rounded-xl ${
             submitStatus.type === 'success' ? 'bg-green-900/70 text-green-100' : 'bg-red-900/70 text-red-100'
@@ -129,7 +129,7 @@ export default function Contact() {
           <button
             type="submit"
             disabled={isSubmitting}
-            className={`w-full py-2 bg-[#38b2ed] hover:bg-[#2ca8e5] text-white font-medium rounded-xl transition-colors duration-300 mt-2 ${
+            className={`w-full py-2 bg-[#38b2ed] hover:bg-[#2ca8e5] text-white font-medium rounded-xl transition-colors duration-300 ${
               isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
             }`}
           >
