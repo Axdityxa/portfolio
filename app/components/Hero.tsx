@@ -62,9 +62,9 @@ export default function Hero() {
           </a>
           <a
             href="#contact"
-            className="px-8 py-4 bg-transparent hover:bg-blue-100/20 dark:hover:bg-white/10 border-2 border-gray-400 dark:border-white text-gray-300 dark:text-white rounded-full font-medium transition-all duration-300 backdrop-blur-sm hover:shadow-lg"
+            className="px-8 py-4 bg-transparent hover:bg-blue-100/20 dark:hover:bg-white/10 border-2 border-gray-300 dark:border-white text-gray-100 dark:text-white rounded-full font-medium transition-all duration-300 backdrop-blur-sm hover:shadow-lg"
           >
-            Contact Me
+            Say Hello :)
           </a>
         </div>
 
