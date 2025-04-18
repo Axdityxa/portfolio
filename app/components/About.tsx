@@ -1,7 +1,4 @@
 "use client";
-
-import Image from 'next/image';
-
 export default function About() {
   return (
     <section id="about" className="relative py-20 min-h-screen flex flex-col items-center justify-center">
