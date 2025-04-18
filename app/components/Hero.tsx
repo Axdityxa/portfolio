@@ -28,7 +28,7 @@ export default function Hero() {
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div className={`transition-all duration-1000 transform ${isMounted ? 'translate-y-0 opacity-100' : 'translate-y-0 opacity-100'}`}>
           <h1 className="text-6xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-800 to-blue-900 dark:from-white dark:to-blue-200">
-            Hello, I&apos;m <span className="text-blue-600 dark:text-blue-500 font-extrabold">Aditya Sharma</span>
+            Hello, I&apos;m <span className="text-blue-800 dark:text-blue-500 font-extrabold">Aditya Sharma</span>
           </h1>
         </div>
 

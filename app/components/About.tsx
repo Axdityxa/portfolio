@@ -1,12 +1,14 @@
 "use client";
 
+import Image from 'next/image';
+
 export default function About() {
   return (
     <section id="about" className="relative py-20 min-h-screen flex flex-col items-center justify-center">
       <h2 className="text-5xl md:text-6xl font-bold mb-3 text-white text-center floating-text drop-shadow-xl">
         About Me
       </h2>
-      <p className="text-xl text-center mb-16 text-gray-200 dark:text-gray-300">
+      <p className="text-xl text-center mb-16 text-white dark:text-gray-300">
         My Introduction
       </p>
       
