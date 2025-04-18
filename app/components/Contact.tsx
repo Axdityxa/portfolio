@@ -65,7 +65,7 @@ export default function Contact() {
         Get in Touch
       </h2>
       
-      <div className="w-full max-w-xl mx-auto px-8 py-8 bg-gray-800/90 rounded-2xl shadow-lg">
+      <div className="w-full max-w-xl mx-auto px-8 py-8 bg-gray-700/70 dark:bg-black/50 rounded-2xl shadow-lg">
         {submitStatus.type && (
           <div className={`p-4 mb-4 rounded-xl ${
             submitStatus.type === 'success' ? 'bg-green-900/70 text-green-100' : 'bg-red-900/70 text-red-100'
@@ -85,7 +85,7 @@ export default function Contact() {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full py-2 px-4 bg-gray-900/95 text-white rounded-xl focus:outline-none border-1 border-gray-700"
+              className="w-full py-2 px-4 bg-gray-800/80 text-white rounded-xl focus:outline-none border-1 dark:border-gray-700 border-gray-500"
               placeholder="Your name"
               required
               disabled={isSubmitting}
@@ -102,7 +102,7 @@ export default function Contact() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full py-2 px-4 bg-gray-900/95 text-white rounded-xl focus:outline-none border-1 border-gray-700"
+              className="w-full py-2 px-4 bg-gray-800/80 text-white rounded-xl focus:outline-none border-1 dark:border-gray-700 border-gray-500"
               placeholder="your@email.com"
               required
               disabled={isSubmitting}
@@ -119,7 +119,7 @@ export default function Contact() {
               value={formData.message}
               onChange={handleChange}
               rows={4}
-              className="w-full py-2 px-4 bg-gray-900/95 text-white rounded-xl focus:outline-none resize-none border-1 border-gray-700"
+              className="w-full py-2 px-4 bg-gray-800/80 text-white rounded-xl focus:outline-none resize-none border-1 dark:border-gray-700 border-gray-500"
               placeholder="Your message..."
               required
               disabled={isSubmitting}
