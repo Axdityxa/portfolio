@@ -60,7 +60,7 @@ export default function About() {
               </div>
               
               <p className="text-lg leading-relaxed mb-8 text-white/90">
-                Fueled by an insatiable curiosity, he's equally enamored by the cosmos and computers, channeling boundless enthusiasm into both realms.
+                Fueled by an insatiable curiosity, he&apos;s equally enamored by the cosmos and computers, channeling boundless enthusiasm into both realms.
               </p>
               
               <div className="flex justify-center md:justify-start">
