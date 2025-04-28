@@ -2,12 +2,22 @@
 
 import { JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal, useState } from 'react';
 import { Award, Calendar, Building, GraduationCap, Briefcase } from 'lucide-react';
+import { LucideIcon } from 'lucide-react';
+
+// Define proper interfaces for our data
+interface ExperienceItem {
+  title: string;
+  company: string;
+  date: string;
+  description: string[];
+  icon: LucideIcon;
+}
 
 export default function Experience() {
   const [activeTab, setActiveTab] = useState('work');
   
   // Experience data
-  const workExperience = [
+  const workExperience: ExperienceItem[] = [
     {
       title: "Senior Frontend Developer",
       company: "Tech Solutions Inc.",
@@ -46,7 +56,7 @@ export default function Experience() {
     }
   ];
 
-  const educationExperience = [
+  const educationExperience: ExperienceItem[] = [
     {
       title: "Master of Computer Science",
       company: "Tech University",
@@ -85,7 +95,7 @@ export default function Experience() {
     }
   ];
 
-  const renderExperienceItems = (items: any[]) => {
+  const renderExperienceItems = (items: ExperienceItem[]) => {
     return (
       <div className="relative">
         {/* Timeline vertical line */}
@@ -113,7 +123,7 @@ export default function Experience() {
                 </div>
                 
                 <ul className="list-disc list-inside space-y-1">
-                  {item.description.map((desc: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined, i: Key | null | undefined) => (
+                  {item.description.map((desc, i) => (
                     <li key={i} className="text-gray-200 text-sm">{desc}</li>
                   ))}
                 </ul>
