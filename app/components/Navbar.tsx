@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { NavBar } from "./ui/tubelight-navbar";
-import { User, Briefcase, Code, Mail, House } from "lucide-react";
+import { User, Briefcase, Code, Mail, House, Award } from "lucide-react";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -28,6 +28,7 @@ export default function Navbar() {
     { name: 'Home', url: '#home', icon: House },
     { name: 'About', url: '#about', icon: User },
     { name: 'Skills', url: '#skills', icon: Code },
+    { name: 'Experience', url: '#experience', icon: Award },
     { name: 'Projects', url: '#projects', icon: Briefcase },
     { name: 'Contact', url: '#contact', icon: Mail }
   ];
