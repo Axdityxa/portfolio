@@ -1,6 +1,6 @@
 "use client";
 
-import { JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal, useState } from 'react';
+import {  useState } from 'react';
 import { Award, Calendar, Building, GraduationCap, Briefcase } from 'lucide-react';
 import { LucideIcon } from 'lucide-react';
 
