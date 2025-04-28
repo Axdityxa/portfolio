@@ -19,21 +19,20 @@ export default function Experience() {
   // Experience data
   const workExperience: ExperienceItem[] = [
     {
-      title: "Senior Frontend Developer",
-      company: "Tech Solutions Inc.",
-      date: "2022 - Present",
+      title: "Web Development Intern",
+      company: "Excell Enterprise Pvt Ltd",
+      date: "2024 - Present",
       description: [
-        "Led the development of responsive web applications using React and Next.js",
-        "Collaborated with UX/UI designers to implement modern user interfaces",
-        "Improved application performance by 40% through code optimization",
-        "Mentored junior developers and conducted code reviews"
+        "Developed IELTPath.com, an IELTS exam preparation platform using Next.js, Typescript, Supabase - PostgreSQL, Prisma ORM, and Clerk for authentication.",
+        "Implemented real-time speaking assessments by integrating Google’s Speech-to-Text API and GPT-4, enabling AI-driven feedback and evaluation for users.",
+        "Designed and developed a comprehensive IELTS preparation course with over 1000+ practice questions, covering all four modules: Reading, Writing, Listening, and Speaking."
       ],
       icon: Building
     },
     {
-      title: "Frontend Developer",
-      company: "Digital Innovations",
-      date: "2020 - 2022",
+      title: "Web Development Intern",
+      company: "CodeSight Global Solutions",
+      date: "2024 - 2024",
       description: [
         "Developed interactive web applications using React and JavaScript",
         "Implemented responsive designs with Tailwind CSS",
@@ -42,37 +41,13 @@ export default function Experience() {
       ],
       icon: Building
     },
-    {
-      title: "Web Development Intern",
-      company: "Creative Studios",
-      date: "2019 - 2020",
-      description: [
-        "Assisted in building and maintaining client websites",
-        "Learned modern frontend frameworks and best practices",
-        "Created UI components and implemented responsive designs",
-        "Collaborated with senior developers on various projects"
-      ],
-      icon: Building
-    }
   ];
 
   const educationExperience: ExperienceItem[] = [
     {
-      title: "Master of Computer Science",
-      company: "Tech University",
-      date: "2018 - 2020",
-      description: [
-        "Specialized in Web Development and Software Engineering",
-        "Graduated with honors - 3.9 GPA",
-        "Completed thesis on modern JavaScript frameworks",
-        "Participated in coding competitions and hackathons"
-      ],
-      icon: GraduationCap
-    },
-    {
-      title: "Bachelor of Computer Science",
-      company: "State University",
-      date: "2014 - 2018",
+      title: "Bachelor of Information Science and Engineering",
+      company: "Visvesvaraya Technological University",
+      date: "2021 - 2025",
       description: [
         "Major in Computer Science with minor in Digital Design",
         "Coursework included: Data Structures, Algorithms, Web Development",
@@ -189,7 +164,7 @@ export default function Experience() {
           {/* Download CV button */}
           <div className="mt-12 flex justify-center">
             <a 
-              href="/resume.pdf" 
+              href="/Aditya_sharma.pdf" 
               download
               className="inline-flex items-center px-8 py-3 bg-[#38b2ed] hover:bg-[#2ca8e5] text-white font-medium rounded-full transition-colors duration-300 shadow-lg"
             >
