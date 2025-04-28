@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { JSXElementConstructor, Key, ReactElement, ReactNode, ReactPortal, useState } from 'react';
 import { Award, Calendar, Building, GraduationCap, Briefcase } from 'lucide-react';
 
 export default function Experience() {
@@ -85,7 +85,7 @@ export default function Experience() {
     }
   ];
 
-  const renderExperienceItems = (items) => {
+  const renderExperienceItems = (items: any[]) => {
     return (
       <div className="relative">
         {/* Timeline vertical line */}
@@ -113,7 +113,7 @@ export default function Experience() {
                 </div>
                 
                 <ul className="list-disc list-inside space-y-1">
-                  {item.description.map((desc, i) => (
+                  {item.description.map((desc: string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | Promise<string | number | bigint | boolean | ReactPortal | ReactElement<unknown, string | JSXElementConstructor<any>> | Iterable<ReactNode> | null | undefined> | null | undefined, i: Key | null | undefined) => (
                     <li key={i} className="text-gray-200 text-sm">{desc}</li>
                   ))}
                 </ul>
