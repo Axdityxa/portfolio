@@ -57,14 +57,15 @@ export default function Experience() {
       icon: GraduationCap
     },
     {
-      title: "Web Development Certification",
-      company: "Online Learning Platform",
-      date: "2017",
+      title: "EX200 RHCSA",
+      company: "Red Hat",
+      date: "2023",
       description: [
-        "Comprehensive course on modern web development",
-        "Covered HTML, CSS, JavaScript, React, and Node.js",
-        "Built portfolio projects as part of the curriculum",
-        "Received top scores on all assessments"
+        "Successfully completed official RHCSA (EX200) training",
+        "Gained hands-on experience in managing Red Hat Enterprise Linux systems",
+        "Covered topics such as user administration, SELinux, firewalls, system boot process, storage management, and shell scripting",
+        "Demonstrated expertise by passing the EX200 certification exam",
+        "Applied skills through lab-based learning and real-world scenarios",
       ],
       icon: Award
     }
