@@ -34,10 +34,9 @@ export default function Experience() {
       company: "CodeSight Global Solutions",
       date: "2024 - 2024",
       description: [
-        "Developed interactive web applications using React and JavaScript",
-        "Implemented responsive designs with Tailwind CSS",
-        "Built RESTful API integrations and state management solutions",
-        "Participated in agile development processes"
+        "Developed and maintained a custom WordPress website for CodeSight Global Solutions, delivering a fully responsive design and enhancing overall user engagement",
+        "Optimized the GetMyAudit website by customizing WordPress themes and plugins, improving functionality and user experience",
+        "Ensured cross-device compatibility and accessibility throughout the development process"
       ],
       icon: Building
     },
