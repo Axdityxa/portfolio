@@ -31,6 +31,55 @@ export function NavBar({ items, className }: NavBarProps) {
     return () => window.removeEventListener("resize", handleResize)
   }, [])
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      
+      // Special case for home section - if near the top of the page
+      if (scrollPosition < 100) {
+        setActiveTab('Home');
+        return;
+      }
+      
+      const sections = items.map(item => {
+        const id = item.url.replace('#', '')
+        const element = document.getElementById(id)
+        if (!element) return { name: item.name, position: -1 }
+        
+        const rect = element.getBoundingClientRect()
+        // Consider the section in view if it's top is near the top of the viewport
+        // or if the element takes up most of the viewport
+        return {
+          name: item.name,
+          position: rect.top,
+          height: rect.height,
+          visible: rect.top < window.innerHeight * 0.5 && rect.bottom > 0
+        }
+      }).filter(section => section.position !== -1)
+      
+      // Find the section that is currently most visible
+      const visibleSections = sections.filter(section => section.visible)
+      if (visibleSections.length > 0) {
+        // Get the one closest to the top of the viewport
+        const currentSection = visibleSections.reduce((prev, current) => {
+          return (Math.abs(current.position) < Math.abs(prev.position)) ? current : prev
+        })
+        
+        if (currentSection.name !== activeTab) {
+          setActiveTab(currentSection.name)
+        }
+      }
+    }
+    
+    window.addEventListener('scroll', handleScroll)
+    // Initial check
+    handleScroll()
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [items, activeTab])
+
   return (
     <div
       className={cn(
