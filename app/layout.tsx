@@ -4,7 +4,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./providers/theme-provider";
 import ThemeToggle from "./components/theme-toggle";
-import Script from "next/script";
+// import Script from "next/script";
+import { Analytics } from '@vercel/analytics/react';
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -65,6 +66,7 @@ export default function RootLayout({
           </div>
           <ThemeToggle />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
