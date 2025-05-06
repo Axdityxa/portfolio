@@ -77,30 +77,30 @@ export default function Skills() {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">React</span>
-                    <span className="text-white/80">90%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '90%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Next.js</span>
-                    <span className="text-white/80">85%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '85%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Tailwind CSS</span>
-                    <span className="text-white/80">95%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '95%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
               </div>
@@ -109,30 +109,30 @@ export default function Skills() {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">HTML/CSS</span>
-                    <span className="text-white/80">95%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '95%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">JavaScript</span>
-                    <span className="text-white/80">90%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '90%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Framer Motion</span>
-                    <span className="text-white/80">80%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '80%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
               </div>
@@ -146,30 +146,30 @@ export default function Skills() {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Node.js</span>
-                    <span className="text-white/80">85%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '85%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Express</span>
-                    <span className="text-white/80">80%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '80%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">RESTful APIs</span>
-                    <span className="text-white/80">90%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '90%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
               </div>
@@ -178,30 +178,30 @@ export default function Skills() {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">GraphQL</span>
-                    <span className="text-white/80">75%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '75%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">NextAuth.js</span>
-                    <span className="text-white/80">80%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '80%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Serverless</span>
-                    <span className="text-white/80">70%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '70%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
               </div>
@@ -215,30 +215,30 @@ export default function Skills() {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">JavaScript</span>
-                    <span className="text-white/80">95%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '95%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">TypeScript</span>
-                    <span className="text-white/80">90%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '90%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Python</span>
-                    <span className="text-white/80">85%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '85%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
               </div>
@@ -247,30 +247,30 @@ export default function Skills() {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Go</span>
-                    <span className="text-white/80">60%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '60%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Rust</span>
-                    <span className="text-white/80">50%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '50%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Bash/Shell</span>
-                    <span className="text-white/80">75%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '75%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
               </div>
@@ -284,30 +284,30 @@ export default function Skills() {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">MongoDB</span>
-                    <span className="text-white/80">90%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '90%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">PostgreSQL</span>
-                    <span className="text-white/80">80%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '80%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Firebase</span>
-                    <span className="text-white/80">85%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '85%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
               </div>
@@ -316,30 +316,30 @@ export default function Skills() {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">MySQL</span>
-                    <span className="text-white/80">75%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '75%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Redis</span>
-                    <span className="text-white/80">70%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '70%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Supabase</span>
-                    <span className="text-white/80">80%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '80%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
               </div>
@@ -353,30 +353,30 @@ export default function Skills() {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Git/GitHub</span>
-                    <span className="text-white/80">95%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '95%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Docker</span>
-                    <span className="text-white/80">80%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '80%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">VS Code</span>
-                    <span className="text-white/80">95%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '95%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
               </div>
@@ -385,30 +385,30 @@ export default function Skills() {
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Figma</span>
-                    <span className="text-white/80">85%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '85%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">CI/CD</span>
-                    <span className="text-white/80">75%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '75%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
                 
                 <div>
                   <div className="flex justify-between mb-1">
                     <span className="text-white font-medium">Vercel/Netlify</span>
-                    <span className="text-white/80">90%</span>
+                    <span className="text-white/80">20%</span>
                   </div>
                   <div className="w-full bg-gray-700/50 rounded-full h-2.5">
-                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '90%' }}></div>
+                    <div className="bg-[#38b2ed] h-2.5 rounded-full" style={{ width: '20%' }}></div>
                   </div>
                 </div>
               </div>
