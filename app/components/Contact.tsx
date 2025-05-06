@@ -13,6 +13,7 @@ export default function Contact() {
     type: 'success' | 'error' | null;
     message: string;
   }>({ type: null, message: '' });
+  const [emailError, setEmailError] = useState('');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -20,10 +21,56 @@ export default function Contact() {
       ...prev,
       [name]: value
     }));
+    
+    // Clear email error when user is typing
+    if (name === 'email') {
+      setEmailError('');
+    }
+  };
+
+  const validateEmail = (email: string): boolean => {
+    // Basic format validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setEmailError('Please enter a valid email address');
+      return false;
+    }
+    
+    // Check for common dummy emails
+    const dummyPatterns = [
+      'example@',
+      'test@',
+      'user@',
+      'sample@',
+      'demo@',
+      'fake@',
+      'email@example',
+      '@example.com',
+      '@test.com',
+      'john.doe@',
+      'jane.doe@'
+    ];
+    
+    const isCommonDummy = dummyPatterns.some(pattern => 
+      email.toLowerCase().includes(pattern.toLowerCase())
+    );
+    
+    if (isCommonDummy) {
+      setEmailError('Please enter your real email address');
+      return false;
+    }
+    
+    return true;
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Validate email before submission
+    if (!validateEmail(formData.email)) {
+      return;
+    }
+    
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: '' });
     
@@ -102,11 +149,16 @@ export default function Contact() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full py-2 px-4 bg-gray-800/80 text-white rounded-xl focus:outline-none border-1 dark:border-gray-700 border-gray-500"
+              className={`w-full py-2 px-4 bg-gray-800/80 text-white rounded-xl focus:outline-none border-1 ${
+                emailError ? 'border-red-500' : 'dark:border-gray-700 border-gray-500'
+              }`}
               placeholder="your@email.com"
               required
               disabled={isSubmitting}
             />
+            {emailError && (
+              <p className="text-red-400 text-sm mt-1">{emailError}</p>
+            )}
           </div>
           
           <div>

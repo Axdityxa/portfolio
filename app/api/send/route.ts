@@ -6,6 +6,36 @@ import EmailTemplate from '@/app/components/email-template';
 // You'll need to add your API key to .env.local
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// Validate email to prevent dummy submissions
+const validateEmail = (email: string): boolean => {
+  // Basic format validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    return false;
+  }
+  
+  // Check for common dummy emails
+  const dummyPatterns = [
+    'example@',
+    'test@',
+    'user@',
+    'sample@',
+    'demo@',
+    'fake@',
+    'email@example',
+    '@example.com',
+    '@test.com',
+    'john.doe@',
+    'jane.doe@'
+  ];
+  
+  const isCommonDummy = dummyPatterns.some(pattern => 
+    email.toLowerCase().includes(pattern.toLowerCase())
+  );
+  
+  return !isCommonDummy;
+};
+
 export async function POST(request: Request) {
   try {
     const { name, email, message } = await request.json();
@@ -14,6 +44,14 @@ export async function POST(request: Request) {
     if (!name || !email || !message) {
       return NextResponse.json(
         { error: 'Missing required fields' },
+        { status: 400 }
+      );
+    }
+
+    // Validate email
+    if (!validateEmail(email)) {
+      return NextResponse.json(
+        { error: 'Please provide a valid email address' },
         { status: 400 }
       );
     }
