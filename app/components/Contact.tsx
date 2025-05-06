@@ -51,6 +51,23 @@ export default function Contact() {
       'jane.doe@'
     ];
     
+    // Check for very short or generic usernames at common domains
+    const [username, domain] = email.toLowerCase().split('@');
+    const commonDomains = ['gmail.com', 'yahoo.com', 'hotmail.com', 'outlook.com'];
+    const commonShortUsernames = ['hey', 'hi', 'me', 'you', 'we', 'us', 'abc', 'xyz', 'temp', 'noreply', 'no-reply'];
+    
+    if (commonDomains.includes(domain) && (username.length <= 3 || commonShortUsernames.includes(username))) {
+      setEmailError('Please use your real email address');
+      return false;
+    }
+    
+    // Check for disposable email domains
+    const disposableDomains = ['mailinator.com', 'tempmail.com', 'guerrillamail.com', 'sharklasers.com', 'yopmail.com'];
+    if (disposableDomains.includes(domain)) {
+      setEmailError('Please do not use disposable email addresses');
+      return false;
+    }
+    
     const isCommonDummy = dummyPatterns.some(pattern => 
       email.toLowerCase().includes(pattern.toLowerCase())
     );
