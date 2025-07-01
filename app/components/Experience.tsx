@@ -164,7 +164,7 @@ export default function Experience() {
           {/* Download CV button */}
           <div className="mt-12 flex justify-center">
             <a 
-              href="/Aditya_sharma.pdf" 
+              href="/Aditya Sharma.pdf" 
               download
               className="inline-flex items-center px-8 py-3 bg-[#38b2ed] hover:bg-[#2ca8e5] text-white font-medium rounded-full transition-colors duration-300 shadow-lg"
             >
